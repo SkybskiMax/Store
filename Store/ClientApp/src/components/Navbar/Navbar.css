@@ -1,0 +1,119 @@
+
+.monospaced {
+    font-family: 'Ubuntu Mono', monospaced;
+}
+
+.search-box {
+    width: 50%;
+}
+
+.navbar {
+    min-height: 60px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.navbar-custom {
+    background-color: #ffffff;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: black;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: black;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: black;
+}
+
+.navbar-logo {
+    height: 60px;
+}
+
+.nav-item {
+    padding-right: 10px;
+}
+
+.dropdown-toggle:after {
+    content: none;
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    font-size: 14px;
+}
+
+ul.dropdown-cart {
+    min-width: 250px;
+}
+
+ul.dropdown-cart li .item {
+    display: block;
+    padding: 3px 10px;
+    margin: 3px 0;
+}
+
+ul.dropdown-cart li .item:hover {
+    background-color: #f3f3f3;
+}
+
+ul.dropdown-cart li .item:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+ul.dropdown-cart li .item-left {
+    float: left;
+}
+
+ul.dropdown-cart li .item-left img,
+ul.dropdown-cart li .item-left div.item-info {
+    float: left;
+}
+
+ul.dropdown-cart li .item-left div.item-info {
+    margin-left: 10px;
+}
+
+ul.dropdown-cart li .item-left div.item-info div {
+    display: block;
+}
+
+ul.dropdown-cart li .item-right {
+    float: right;
+}
+
+.no-text-decoration {
+    text-decoration: none !important;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333333;
+    background-color: #ffffff;
+}
+

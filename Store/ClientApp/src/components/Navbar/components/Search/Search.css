@@ -1,0 +1,30 @@
+body {
+    font-family: Helvetica, sans-serif;
+  }
+
+.sb-wrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 80px;
+    left: 40px;
+}
+
+.sb-dropdown {
+  position: absolute;
+  height: auto;
+  top: 60px;
+  left: -157px;
+  background:white;
+  z-index: 10;
+  border: 1px solid #b1b2b3;
+  border-radius: 0.25rem;
+}
+
+ul.sb-dropdown {
+  float: left;
+  list-style: none;
+  width: 730px;
+  padding: 6px 0px;
+
+}

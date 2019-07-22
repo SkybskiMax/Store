@@ -1,0 +1,14 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: 202px;
+    background-color: #f1f1f1;;
+}
+
+.no-text-decoration {
+    text-decoration: none !important;
+}

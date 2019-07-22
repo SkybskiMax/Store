@@ -1,0 +1,52 @@
+{
+  "name": "musicstore",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.0.2",
+    "bootstrap": "^4.3.1",
+    "file-loader": "^4.0.0",
+    "formik": "^1.5.7",
+    "install": "^0.12.2",
+    "jquery": "^3.4.1",
+    "npm": "^6.10.0",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.7.0",
+    "react": "^16.8.6",
+    "react-autosuggest": "^9.4.3",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "^16.8.6",
+    "react-form-validator-core": "^0.6.4",
+    "react-icons": "^2.2.7",
+    "react-redux": "^7.0.3",
+    "react-redux-notify": "^4.1.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "simple-react-validator": "^1.2.0",
+    "url-loader": "^2.0.1",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

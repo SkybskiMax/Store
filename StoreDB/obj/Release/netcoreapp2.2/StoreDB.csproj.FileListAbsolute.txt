@@ -1,0 +1,9 @@
+D:\iTechArt-master\StoreDB\bin\Release\netcoreapp2.2\StoreDB.deps.json
+D:\iTechArt-master\StoreDB\bin\Release\netcoreapp2.2\StoreDB.dll
+D:\iTechArt-master\StoreDB\bin\Release\netcoreapp2.2\StoreDB.pdb
+D:\iTechArt-master\StoreDB\obj\Release\netcoreapp2.2\StoreDB.csprojAssemblyReference.cache
+D:\iTechArt-master\StoreDB\obj\Release\netcoreapp2.2\StoreDB.csproj.CoreCompileInputs.cache
+D:\iTechArt-master\StoreDB\obj\Release\netcoreapp2.2\StoreDB.AssemblyInfoInputs.cache
+D:\iTechArt-master\StoreDB\obj\Release\netcoreapp2.2\StoreDB.AssemblyInfo.cs
+D:\iTechArt-master\StoreDB\obj\Release\netcoreapp2.2\StoreDB.dll
+D:\iTechArt-master\StoreDB\obj\Release\netcoreapp2.2\StoreDB.pdb

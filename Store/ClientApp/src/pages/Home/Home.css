@@ -1,0 +1,11 @@
+.banner-main-text {
+    position: absolute;
+    right: 25%;
+    bottom: 25%;
+    left: 25%;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
