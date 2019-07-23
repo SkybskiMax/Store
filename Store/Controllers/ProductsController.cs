@@ -84,7 +84,7 @@ namespace Store.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != product.Id)
+            if (id != product.ProductId)
             {
                 return BadRequest();
             }
@@ -123,7 +123,7 @@ namespace Store.Controllers
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("PostProduct", new { id = product.Id }, product);
+            return CreatedAtAction("PostProduct", new { id = product.ProductId }, product);
         }
 
         // DELETE: api/Products/5
@@ -150,7 +150,7 @@ namespace Store.Controllers
 
         private bool ProductExists(int id)
         {
-            return _context.Products.Any(e => e.Id == id);
+            return _context.Products.Any(e => e.ProductId == id);
         }
     }
 }

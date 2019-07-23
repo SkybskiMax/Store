@@ -33,9 +33,6 @@ namespace StoreDB.Contexts
             modelBuilder.Entity<ProductOrder>()
                .HasKey(t => new { t.ProductId, t.OrderId });
 
-            modelBuilder.Entity<ProductCart>()
-                .HasKey(sc => new { sc.ProductId, sc.CartId });
-
             modelBuilder.Entity<ProductOrder>()
                 .HasOne(sc => sc.Product)
                 .WithMany(s => s.ProductOrders)

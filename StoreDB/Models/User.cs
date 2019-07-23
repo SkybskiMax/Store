@@ -11,7 +11,7 @@ namespace StoreDB.Models
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public IList<Order> Orders { get; set; } = new List<Order>();
-        public Cart Cart { get; set; } = new Cart();
+        public IList<Order> Orders { get; set; }
+
     }
 }

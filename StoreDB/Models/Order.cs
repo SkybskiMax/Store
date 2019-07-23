@@ -11,11 +11,13 @@ namespace StoreDB.Models
         public int OrderId { get; set; }
         public string UserId { get; set; }
         public User User { get; set; }
+        public OrderStatus Status { get; set; }
         public List<ProductOrder> ProductOrders { get; set; }
+    }
 
-        public Order()
-        {
-            ProductOrders = new List<ProductOrder>();
-        }
+    public enum OrderStatus
+    {
+        CURRENT,
+        SUBMITTED
     }
 }

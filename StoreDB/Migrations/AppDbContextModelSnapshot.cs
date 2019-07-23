@@ -185,23 +185,6 @@ namespace StoreDB.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
-            modelBuilder.Entity("StoreDB.Models.Cart", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId")
-                        .IsUnique()
-                        .HasFilter("[UserId] IS NOT NULL");
-
-                    b.ToTable("Cart");
-                });
-
             modelBuilder.Entity("StoreDB.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -221,6 +204,8 @@ namespace StoreDB.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("Status");
+
                     b.Property<string>("UserId");
 
                     b.HasKey("OrderId");
@@ -232,13 +217,11 @@ namespace StoreDB.Migrations
 
             modelBuilder.Entity("StoreDB.Models.Product", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Brand");
-
-                    b.Property<int?>("CartId");
 
                     b.Property<int>("CategoryId");
 
@@ -251,26 +234,11 @@ namespace StoreDB.Migrations
 
                     b.Property<string>("Title");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("CartId");
+                    b.HasKey("ProductId");
 
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Products");
-                });
-
-            modelBuilder.Entity("StoreDB.Models.ProductCart", b =>
-                {
-                    b.Property<int>("ProductId");
-
-                    b.Property<int>("CartId");
-
-                    b.HasKey("ProductId", "CartId");
-
-                    b.HasIndex("CartId");
-
-                    b.ToTable("ProductCart");
                 });
 
             modelBuilder.Entity("StoreDB.Models.ProductOrder", b =>
@@ -342,13 +310,6 @@ namespace StoreDB.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("StoreDB.Models.Cart", b =>
-                {
-                    b.HasOne("StoreDB.Models.User", "User")
-                        .WithOne("Cart")
-                        .HasForeignKey("StoreDB.Models.Cart", "UserId");
-                });
-
             modelBuilder.Entity("StoreDB.Models.Order", b =>
                 {
                     b.HasOne("StoreDB.Models.User", "User")
@@ -358,26 +319,9 @@ namespace StoreDB.Migrations
 
             modelBuilder.Entity("StoreDB.Models.Product", b =>
                 {
-                    b.HasOne("StoreDB.Models.Cart")
-                        .WithMany("Products")
-                        .HasForeignKey("CartId");
-
                     b.HasOne("StoreDB.Models.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade);
-                });
-
-            modelBuilder.Entity("StoreDB.Models.ProductCart", b =>
-                {
-                    b.HasOne("StoreDB.Models.Cart", "Cart")
-                        .WithMany("ProductCarts")
-                        .HasForeignKey("CartId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("StoreDB.Models.Product", "Product")
-                        .WithMany("ProductCarts")
-                        .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

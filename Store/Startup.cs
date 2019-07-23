@@ -43,6 +43,8 @@ namespace Store
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
 
+
+
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -101,7 +103,7 @@ namespace Store
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
             });
-
+            /*
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "ClientApp";
@@ -111,6 +113,7 @@ namespace Store
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
+            */
 
         }
     }
