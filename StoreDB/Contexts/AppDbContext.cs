@@ -30,17 +30,17 @@ namespace StoreDB.Contexts
                .HasMany(p => p.Orders)
                .WithOne(p => p.User);
 
-            modelBuilder.Entity<ProductOrder>()
+            modelBuilder.Entity<OrderProduct>()
                .HasKey(t => new { t.ProductId, t.OrderId });
 
-            modelBuilder.Entity<ProductOrder>()
+            modelBuilder.Entity<OrderProduct>()
                 .HasOne(sc => sc.Product)
-                .WithMany(s => s.ProductOrders)
+                .WithMany(s => s.OrderProducts)
                 .HasForeignKey(sc => sc.ProductId);
 
-            modelBuilder.Entity<ProductOrder>()
+            modelBuilder.Entity<OrderProduct>()
                 .HasOne(sc => sc.Order)
-                .WithMany(c => c.ProductOrders)
+                .WithMany(c => c.OrderProducts)
                 .HasForeignKey(sc => sc.OrderId);
         }
     }

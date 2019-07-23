@@ -15,6 +15,6 @@ namespace StoreDB.Models
         public string ImgPath { get; set; }
         public string Description { get; set; }
 
-        public List<ProductOrder> ProductOrders { get; set; }
+        public List<OrderProduct> OrderProducts { get; set; }
     }
 }

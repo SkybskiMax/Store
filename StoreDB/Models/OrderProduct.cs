@@ -4,7 +4,7 @@ using System.Text;
 
 namespace StoreDB.Models
 {
-    public class ProductOrder
+    public class OrderProduct
     {
         public int OrderId { get; set; }
         public int ProductId { get; set; }

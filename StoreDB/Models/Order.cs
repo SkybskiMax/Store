@@ -12,7 +12,7 @@ namespace StoreDB.Models
         public string UserId { get; set; }
         public User User { get; set; }
         public OrderStatus Status { get; set; }
-        public List<ProductOrder> ProductOrders { get; set; }
+        public List<OrderProduct> OrderProducts { get; set; }
     }
 
     public enum OrderStatus
